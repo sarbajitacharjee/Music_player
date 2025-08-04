@@ -4,24 +4,24 @@ const songs = [
     title: "limit",
     artist: "Aurora Sky",
     audio: "/music/limit.mp3",
-    cover: "/covers/cover1.jpg",
-    duration: "3:45"
+    cover: "/covers/limit.jpeg",
+    
   },
   {
     id: 2,
-    title: "Electric Heartbeat",
+    title: "Die",
     artist: "Neon Nights",
     audio: "/music/Die.mp3",
     cover: "/covers/cover2.jpg",
-    duration: "4:05"
+    
   },
   {
     id: 3,
-    title: "nows-the-time-3889",
+    title: "embrace",
     artist: "Neon Nights",
-    audio: "/music/nows-the-time-3889.mp3",
-    cover: "/covers/cover2.jpg",
-    duration: "4:05"
+    audio: "/music/embrace.mp3",
+    cover: "/covers/embrace.jpg",
+    
   }
 ];
 
