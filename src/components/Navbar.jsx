@@ -31,9 +31,10 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <ul className="hidden md:flex items-center gap-6 text-sm font-medium">
-          <li><Link to="/" className="hover:text-pink-400 transition">Home</Link></li>
+          <li><Link to="/musicplayer" className="hover:text-pink-400 transition">Home</Link></li>
           <li><Link to="/explore" className="hover:text-pink-400 transition">Explore</Link></li>
           <li><Link to="/about" className="hover:text-pink-400 transition">About</Link></li>
+          <li><Link to="/favorites" className="hover:text-pink-400 transition">Favorites</Link></li>
           <li>
             <Link to="/login">
               <button className="bg-transparent border border-pink-500 hover:bg-pink-500 px-4 py-2 rounded-md text-pink-400 hover:text-white transition text-sm">
@@ -73,6 +74,7 @@ const Navbar = () => {
             <li><Link to="/" onClick={() => setOpen(false)} className="hover:text-pink-400">Home</Link></li>
             <li><Link to="/explore" onClick={() => setOpen(false)} className="hover:text-pink-400">Explore</Link></li>
             <li><Link to="/about" onClick={() => setOpen(false)} className="hover:text-pink-400">About</Link></li>
+            <li><Link to="/favorites" onClick={() => setOpen(false)} className="hover:text-pink-400">Favourites</Link></li>
             <li>
               <Link to="/login" onClick={() => setOpen(false)}>
                 <button className="w-full bg-transparent border border-pink-500 hover:bg-pink-500 px-4 py-2 rounded-md text-pink-400 hover:text-white transition text-sm">

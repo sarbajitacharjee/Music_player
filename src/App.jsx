@@ -1,10 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
+import { BrowserRouter as Router, Routes, Route ,useLocation } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Musicplayer from "./pages/Player";
+import MusicPlayer from "./pages/MusicPlayer";
 // import About from "./pages/About";
 import MainLayout from "./pages/MainLayout";
+import Favorites from "./pages/Favorites"
 
 const App = () => {
   return (
@@ -15,7 +17,8 @@ const App = () => {
 
         {/* All pages after continue - with Navbar using layout */}
         <Route element={<MainLayout />}>
-          <Route path="/musicplayer" element={<Musicplayer />} />
+          <Route path="/musicplayer" element={<MusicPlayer />} />
+          <Route path="/favorites" element={<Favorites />} />
           {/* <Route path="/about" element={<About />} /> */}
           {/* Add more routes here */}
         </Route>
